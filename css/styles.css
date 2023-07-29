@@ -14,6 +14,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: var(--header-footer-color);
+    color: white;
 }
 
 .links {
@@ -27,14 +28,18 @@ body {
 
 .links li {
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
     background-color: white;
     padding: 12px;
     border: none;
-    border-radius: 20px;
+    border-radius: 8px;
     text-align: center;
+    margin: 4px;
 }
 
 button:hover {
@@ -43,10 +48,13 @@ button:hover {
 
 button:active {
     background-color: skyblue;
+    border: 2px solid black;
+    padding: 10px;
 }
 
 input {
     border-radius:12px;
+    margin: 4px;
 }
 
 input::selection {
@@ -72,6 +80,12 @@ input:invalid {
     display: flex;
     justify-content: center;
     align-items: center;    
+}
+
+fieldset {
+    display: flex;
+    border: 2px solid white;
+    border-radius: 32px;
 }
 
 .footer {
