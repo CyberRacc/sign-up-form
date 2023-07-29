@@ -1,0 +1,38 @@
+:root {
+    --background-color-global: grey;
+}
+
+body {
+    background-color: var(--background-color-global);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.links li {
+    list-style-type: none;
+}
+
+button {
+    background-color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: deepskyblue;
+}
+
+button:active {
+    background-color: skyblue;
+}
