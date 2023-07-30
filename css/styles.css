@@ -67,14 +67,6 @@ body {
     margin: 4px;
 }
 
-
-#create-account-btn {
-    background-color: rgb(190, 73, 190);
-    color: white;
-    margin-top: 5%;
-    width: 150px;
-}
-
 #links-nav a:hover {
     background-color: var(--button-hover-color);
 }
@@ -221,6 +213,21 @@ fieldset {
     flex-direction: column;
     border: none;
     box-shadow: none;
+}
+
+#create-account-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: flex-start;
+    margin: 0 5%;
+    padding-top: 2%;
+}
+
+#create-account-btn {
+    background-color: rgb(190, 73, 190);
+    color: white;
+    width: 150px;
 }
 
 .footer {
