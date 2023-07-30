@@ -3,49 +3,69 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sign-up Form</title>
+        <title>The Raccoon Company</title>
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/test.js" defer></script>
     </head>
     <body>
-        <div class="header">
-            <div class="logo">
-                <h1>Sign-Up Form</h1>
-            </div>
-            <div class="links">
-                <ul>
-                    <li><button>Home</button></li>
-                    <li><button>About</button></li>
-                    <li><button>Contact</button></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="main">
-            <div class="form">
-
-                <div class="form-title">
-                    <h2>Sign Up to our thing!</h2>
+        <div class="main-content">
+            <div class="header">
+                <div class="logo">
+                    <h1>The Raccoon Company</h1>
                 </div>
-                <form action="#" method="post">
-                        <fieldset class="form">
-                            <legend>Sign Up</legend>
-                            
-                            <label for="first_name">First Name</label>
-                            <input type="text" placeholder="Dave" name="first_name">
+                <div class="links">
+                    <div id="link-buttons">
+                        <button>Home</button>
+                        <button>About</button>
+                        <button>Contact</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main">
+                <div class="left-container">
+                    <div class="background-image">
+                        <img src="img/background-image.jpg" alt="Synthwave background image">
+                    </div>
+                    <div class="form-title">
+                        <h2>Create a Raccoon Account!</h2>
+                    </div>
+                    <div class="image-credit">
+                        <p>Image from WallpaperFlare.com</p>
+                    </div>
+                </div>
 
-                            <label for="last_name">Last Name</label>
-                            <input type="text" placeholder="Daveson">
+                <div class="right-container">
+                    <div class="form-container">
+                        <div class="form">
+                            <form action="#" method="post">
+                                    <fieldset class="form">
+                                        <legend>Sign Up</legend>
+                                        <label for="first_name">First Name</label>
+                                        <input type="text" placeholder="Dave" name="first_name" id="first_name" required>
+                                        <label for="last_name">Last Name</label>
+                                        <input type="text" name="last_name" id="last_name" placeholder="Daveson" required>
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+                                    </fieldset>
+                                    <fieldset class="form">
+                                        <label for="phone-number">Phone Number</label>
+                                        <input type="text" name="phone-number" id="phone-number" placeholder="(+44)79765345" required>
+                                        <label for="password">Password</label>
+                                        <input type="password" name="password" id="password" required>
+                                        <label for="password-confirm">Password Confirmation</label>
+                                        <input type="password" name="password-confirm" id="password-confirm" required>
+                                    </fieldset>
 
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="example@mail.com">
-
-                            <button type="reset">Clear</button>
-                            <button type="submit">Create Account</button>
-                        </fieldset>
-
-
-                </form>
+                                    <button type="reset">Clear</button>
+                                    <button type="submit">Create Account</button>
+                            </form>
+                            <div class="already">
+                                <p>Already have an account? <a href="">Sign in</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
