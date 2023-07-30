@@ -8,24 +8,26 @@
         <script src="js/test.js" defer></script>
     </head>
     <body>
-        <div class="main-content">
+        <div id="main-content">
             <div class="header">
                 <div class="logo">
                     <h1>The Raccoon Company</h1>
                 </div>
                 <div class="links">
-                    <div id="link-buttons">
-                        <button>Home</button>
-                        <button>About</button>
-                        <button>Contact</button>
-                    </div>
+                    <nav id="links-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
             
             <div class="main">
-                <div class="left-container">
+                <div id="left-container">
                     <div class="background-image">
-                        
+                        <img src="img/background-image.jpg" alt="Synthwave background image">
                     </div>
                     <div class="form-title">
                         <h2>Create a Raccoon Account!</h2>
@@ -35,7 +37,15 @@
                     </div>
                 </div>
 
-                <div class="right-container">
+                <div id="right-container">
+
+                    <div id="about">
+                        <p>This is not a real service, and although any data inputted here
+                            will not be submitted to any servers, please do not submit any
+                            personal information.
+                        </p>
+                    </div>
+
                     <div class="form-container">
                         <div class="form">
                             <form action="#" method="post">
@@ -60,7 +70,6 @@
                                             <input type="password" name="password-confirm" id="password-confirm" required>
                                         </fieldset>
                                     </div>
-
                                     <button type="reset">Clear</button>
                                     <button type="submit" id="create-account-btn">Create Account</button>
                             </form>
@@ -78,5 +87,6 @@
                 <h1>CyberRacc &copy; 2023</h1>
             </div>
         </div>
+
     </body>
 </html>
