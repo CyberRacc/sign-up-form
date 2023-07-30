@@ -4,13 +4,13 @@
     --background-color-global: rgb(179, 179, 179);
     --header-footer-color: rgb(97, 97, 97);
     font-family: 'Righteous', cursive;
+    font-size: 1rem;
 }
 
 body {
     background-color: var(--background-color-global);
     margin: 0;
-    max-height: 100vh;
-    max-width: 100vw;
+    padding: 0;
 }
 
 .main-content {
@@ -49,6 +49,11 @@ body {
     border-radius: 12px;
     text-align: center;
     margin: 4px;
+}
+
+#create-account-btn {
+    background-color: rgb(190, 73, 190);
+    color: white;
 }
 
 button {
@@ -103,9 +108,23 @@ input:invalid {
     height: 90vh;
 }
 
+.right-container {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
 .background-image {
     display: flex;
     width: 100%;
+    height: 100%; /* specify a height for the div */
+    background-image: url('../img/background-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
 }
 
 .form-title {
@@ -130,14 +149,6 @@ input:invalid {
     bottom: 0;
 }
 
-.right-container {
-    display: flex;
-    height: 90vh;
-    width: 100%;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-}
 
 .form-buttons {
     display: flex;
@@ -159,11 +170,18 @@ input:invalid {
     height: 25vh;
 }
 
+#form-left {
+display: flex;
+}
+
+#form-right {
+    display: flex;
+}
+
 fieldset {
     display: flex;
     border: none;
     box-shadow: 12px black;
-    width: 100%;
     border-radius: 4px;
 }
 

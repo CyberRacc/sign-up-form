@@ -25,7 +25,7 @@
             <div class="main">
                 <div class="left-container">
                     <div class="background-image">
-                        <img src="img/background-image.jpg" alt="Synthwave background image">
+                        
                     </div>
                     <div class="form-title">
                         <h2>Create a Raccoon Account!</h2>
@@ -39,26 +39,30 @@
                     <div class="form-container">
                         <div class="form">
                             <form action="#" method="post">
-                                    <fieldset class="form">
-                                        <legend>Sign Up</legend>
-                                        <label for="first_name">First Name</label>
-                                        <input type="text" placeholder="Dave" name="first_name" id="first_name" required>
-                                        <label for="last_name">Last Name</label>
-                                        <input type="text" name="last_name" id="last_name" placeholder="Daveson" required>
-                                        <label for="email">Email</label>
-                                        <input type="email" name="email" id="email" placeholder="example@mail.com" required>
-                                    </fieldset>
-                                    <fieldset class="form">
-                                        <label for="phone-number">Phone Number</label>
-                                        <input type="text" name="phone-number" id="phone-number" placeholder="(+44)79765345" required>
-                                        <label for="password">Password</label>
-                                        <input type="password" name="password" id="password" required>
-                                        <label for="password-confirm">Password Confirmation</label>
-                                        <input type="password" name="password-confirm" id="password-confirm" required>
-                                    </fieldset>
+                                    <div id="form-left">
+                                        <fieldset class="form">
+                                            <legend>Sign Up</legend>
+                                            <label for="first_name">First Name</label>
+                                            <input type="text" placeholder="Dave" name="first_name" id="first_name" required>
+                                            <label for="last_name">Last Name</label>
+                                            <input type="text" name="last_name" id="last_name" placeholder="Daveson" required>
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+                                        </fieldset>
+                                    </div>
+                                    <div id="form-right">
+                                        <fieldset class="form">
+                                            <label for="phone-number">Phone Number</label>
+                                            <input type="text" name="phone-number" id="phone-number" placeholder="(+44)79765345" required>
+                                            <label for="password">Password</label>
+                                            <input type="password" name="password" id="password" required>
+                                            <label for="password-confirm">Password Confirmation</label>
+                                            <input type="password" name="password-confirm" id="password-confirm" required>
+                                        </fieldset>
+                                    </div>
 
                                     <button type="reset">Clear</button>
-                                    <button type="submit">Create Account</button>
+                                    <button type="submit" id="create-account-btn">Create Account</button>
                             </form>
                             <div class="already">
                                 <p>Already have an account? <a href="">Sign in</a></p>
@@ -70,7 +74,7 @@
         </div>
 
         <div class="footer">
-            <div class="copyrighy">
+            <div class="copyright">
                 <h1>CyberRacc &copy; 2023</h1>
             </div>
         </div>
