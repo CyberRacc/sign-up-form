@@ -185,7 +185,7 @@ input:invalid {
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 250px;
+    height: 325px;
     border-radius: 8px;
     padding: 1%;
     margin: 1%;
@@ -218,10 +218,6 @@ fieldset {
 #create-account-container {
     display: flex;
     flex-direction: column;
-    justify-self: center;
-    align-self: flex-start;
-    margin: 0 5%;
-    padding-top: 2%;
 }
 
 #create-account-btn {
